@@ -1,0 +1,69 @@
+<!-- info.html (Main Academy Dashboard) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaharier Academy - Info</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i> <span data-i18n="academy_name">Shaharier Academy</span>
+        </div>
+        <nav>
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="select-wrapper">
+                <i class="fas fa-globe"></i>
+                <select class="language-switcher">
+                    <option value="en">English</option>
+                    <option value="bn">বাংলা</option>
+                </select>
+            </div>
+            <button id="logout-btn" class="nav-btn">
+                <i class="fas fa-sign-out-alt"></i> <span data-i18n="logout">Logout</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <img src="assets/image/teach.png" alt="Teacher" class="teacher-photo">
+                <h1 data-i18n="welcome">Welcome to Shaharier Academy</h1>
+                <p data-i18n="description">Excellence in education and guiding the future of Bangladesh.</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <h2 data-i18n="contact_us"><i class="fas fa-address-card"></i> Contact Information</h2>
+            <div class="info-card">
+                <p>
+                    <i class="fas fa-phone-alt"></i> 
+                    <strong data-i18n="phone">Phone:</strong> 
+                    <a href="tel:01988531365">01988531365</a>
+                </p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <strong data-i18n="location">Location:</strong> 
+                    <span>Uttar badda, GM bari (satarkul road)</span>
+                </p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://wa.me/8801988531365" target="_blank" class="btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span data-i18n="wa_link">WhatsApp</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
